@@ -33,12 +33,13 @@ ENV/
 .env.local
 
 # Machine Learning Artifacts
+# WE MUST INCLUDE MODELS FOR DEPLOYMENT!
 *.pkl
-backend/models/*.pkl
-backend/models/*.json
+# backend/models/*.pkl
+# backend/models/*.json
 
 # Data
-backend/data/*.csv
+# backend/data/*.csv
 
 # Streamlit
 .streamlit/
