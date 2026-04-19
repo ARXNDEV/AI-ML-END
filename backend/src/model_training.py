@@ -49,8 +49,10 @@ def train_models():
         'Random Forest': {
             'model': RandomForestRegressor(random_state=42),
             'params': {
-                'n_estimators': [50, 100],
-                'max_depth': [None, 10, 20]
+                'n_estimators': [50],
+                'max_depth': [15],
+                'min_samples_split': [5],
+                'min_samples_leaf': [5]
             }
         },
         'Gradient Boosting': {

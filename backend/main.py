@@ -27,12 +27,6 @@ app.add_middleware(
 # Load Models on Startup
 models_dir = os.path.join(os.path.dirname(__file__), 'models')
 
-# If models don't exist on Render, train them on startup
-if not os.path.exists(os.path.join(models_dir, 'best_model.pkl')):
-    print("Models not found! Training models dynamically before startup...")
-    from model_training import train_models
-    train_models()
-    
 try:
     model = joblib.load(os.path.join(models_dir, 'best_model.pkl'))
     encoders = joblib.load(os.path.join(models_dir, 'encoders.pkl'))

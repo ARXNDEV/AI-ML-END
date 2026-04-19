@@ -1,0 +1,61 @@
+{
+    "Linear Regression": {
+        "type": "regression",
+        "metrics": {
+            "MAE": 62444.31062975389,
+            "RMSE": 81501.7644654454,
+            "R2": 0.0842517227604167
+        },
+        "best_params": {},
+        "feature_importance": {
+            "Area": 2432.6743709978446,
+            "Item": 20281.262870454968,
+            "Year": 7195.7816393213,
+            "average_rain_fall_mm_per_year": 2390.504492283296,
+            "pesticides_tonnes": 6036.161968108191,
+            "avg_temp": 11967.764542078932
+        }
+    },
+    "Random Forest": {
+        "type": "regression",
+        "metrics": {
+            "MAE": 5484.710568199412,
+            "RMSE": 12737.057606647113,
+            "R2": 0.9776344123188004
+        },
+        "best_params": {
+            "max_depth": 15,
+            "min_samples_leaf": 5,
+            "min_samples_split": 5,
+            "n_estimators": 50
+        },
+        "feature_importance": {
+            "Area": 0.05264238192273453,
+            "Item": 0.618714066129651,
+            "Year": 0.02675369872621454,
+            "average_rain_fall_mm_per_year": 0.08470394663701764,
+            "pesticides_tonnes": 0.10955692418726153,
+            "avg_temp": 0.1076289823971207
+        }
+    },
+    "Gradient Boosting": {
+        "type": "regression",
+        "metrics": {
+            "MAE": 21805.26283397585,
+            "RMSE": 34773.82258547464,
+            "R2": 0.833295640875001
+        },
+        "best_params": {
+            "learning_rate": 0.1,
+            "n_estimators": 100
+        },
+        "feature_importance": {
+            "Area": 0.042098673634593374,
+            "Item": 0.7787439706679306,
+            "Year": 0.009157109803704256,
+            "average_rain_fall_mm_per_year": 0.036325743079437194,
+            "pesticides_tonnes": 0.06481866761380745,
+            "avg_temp": 0.06885583520052724
+        }
+    }
+}

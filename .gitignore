@@ -34,7 +34,7 @@ ENV/
 
 # Machine Learning Artifacts
 # WE MUST INCLUDE MODELS FOR DEPLOYMENT!
-*.pkl
+# *.pkl
 # backend/models/*.pkl
 # backend/models/*.json
 
