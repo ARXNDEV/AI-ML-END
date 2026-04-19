@@ -57,7 +57,7 @@ export default function Predict() {
 
       console.log('Sending request data:', requestData);
 
-      const response = await fetch('http://localhost:8000/api/predict', {
+      const response = await fetch('https://ai-ml-end.onrender.com/api/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ export default function Predict() {
       setResult({ yield: Math.round(data.yield_hg_ha), tonnes: parseFloat(data.yield_tonnes_ha.toFixed(2)) });
     } catch (error: any) {
       console.error('Prediction error:', error);
-      alert(`Failed to get prediction: ${error.message}. Please ensure the backend is running on port 8000.`);
+      alert(`Failed to get prediction: ${error.message}. Please ensure the backend is running.`);
     } finally {
       setLoading(false);
     }

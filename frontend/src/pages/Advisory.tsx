@@ -99,7 +99,7 @@ export default function Advisory() {
 
       console.log('Sending Advisory request data:', requestData);
 
-      const response = await fetch('http://localhost:8000/api/advisory', {
+      const response = await fetch('https://ai-ml-end.onrender.com/api/advisory', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ export default function Advisory() {
       setReport(data.report);
     } catch (error: any) {
       console.error('Advisory error:', error);
-      alert(`Failed to generate advisory report: ${error.message}. Please ensure the backend is running on port 8000 and your API key is valid.`);
+      alert(`Failed to generate advisory report: ${error.message}. Please ensure the backend is running and your API key is valid.`);
     } finally {
       setLoading(false);
     }
